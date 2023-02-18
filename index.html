@@ -1,0 +1,53 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+
+      <p class='words'>Model is trained to identify the following objects: </p>
+
+      
+      <p class="objects">Headphones</p>
+      <hr>
+      <p class="objects">Mouse</p>
+      <hr>
+      <p class="objects">USB</p>
+      <hr>
+      <p class="objects">Pencil</p>
+
+      <label class='words' >Webcam View - </label>
+      <br>
+      <div id="camera"></div>
+      <br><br>
+      <div hidden id="view"><label class="words">Output - </label><br><br>
+      <div id="result"></div>
+      <br><br></div>
+      <button class="button" onclick="take_snapshot()">Take Snapshot</button><br>
+      <br><button class="button" onclick="check()">Check</kbutton><br><br>
+      <p class='words'>Object : <span id="object">N/A</span></p><br>
+      <p class='words'>Accuracy : <span id="accuracy">N/A</span></p>
+    </center>
+  </div>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
